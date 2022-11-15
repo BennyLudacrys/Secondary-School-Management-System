@@ -71,7 +71,7 @@ public class TeacherService implements ExtendsUserService {
     @Override
     public Teacher returnUser(Long id) {   // Método que retorna um professor do banco.
         Optional<Teacher> teacher = teacherRepository.findById(id);
-        return teacher.orElseThrow(() -> new ResourceNotFoundException("Id : " + id + ", This teacher wasn't found on DataBase"));
+        return teacher.orElseThrow(() -> new ResourceNotFoundException("Id : " + id + ", Professor nao encontrado na Base de dados"));
     }
 
 
@@ -85,7 +85,7 @@ public class TeacherService implements ExtendsUserService {
             } else if (noClass.equalsIgnoreCase("FALSE")) {
                 teachers = teacherRepository.findAll();
             } else {
-                throw new InvalidParamException("This parameter : {" + noClass + "} is invalid");
+                throw new InvalidParamException("Este parametro : {" + noClass + "} e invalido");
             }
         } else {
             teachers = teacherRepository.findAll();

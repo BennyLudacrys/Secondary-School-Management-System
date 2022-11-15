@@ -52,7 +52,7 @@ public class UserAreaService {
         userDataBase.setPassword(newPasswordEncoded);
         userRepository.save(userDataBase);
 
-        return "SUCCESS! You just changed your password!"; // Caso a senha seja alterada com sucesso, irá aparecer isso para o usuário.
+        return "Feito. Palavra passe alterada com sucesso!"; // Caso a senha seja alterada com sucesso, irá aparecer isso para o usuário.
     }
 
 

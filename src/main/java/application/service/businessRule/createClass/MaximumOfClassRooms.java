@@ -17,7 +17,7 @@ public class MaximumOfClassRooms implements CreateClassCheck {
         int size = classRooms.size();
 
         if (size >= 19) {
-            throw new MaximumOfClassRoomsException("The system can't have more than 19 classrooms");
+            throw new MaximumOfClassRoomsException("O sistema nao deve ter mais que 19 salas");
         }
 
     }

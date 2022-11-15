@@ -14,7 +14,7 @@ public class TeacherHasAnotherClass implements SetTeacherCheck { // Se o profess
         classTeacher = null; // null
 
         if (teacher.getClassRoom() != null) {
-            throw new TeacherHasAnotherClassException("The teacher already belongs an another class.");
+            throw new TeacherHasAnotherClassException("Este professor ja pertence a uma outra sala.");
         }
     }
 }

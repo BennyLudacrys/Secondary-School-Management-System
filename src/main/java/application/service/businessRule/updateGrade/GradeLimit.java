@@ -21,13 +21,13 @@ public class GradeLimit implements UpdateGradesCheck {
 
         List<Double> grades = Arrays.asList(newGrades.getGrade1(), newGrades.getGrade2(), newGrades.getGrade3());
 
-        double gradeLimitMax = 10;
+        double gradeLimitMax = 20;
         double gradLimitMin = 0;
 
         for (Double grade : grades) {
             if (grade != null) {
                 if (grade > gradeLimitMax || grade < gradLimitMin) {
-                    throw new GradeLimitException("Grades is supposed to be between 0 and 10");
+                    throw new GradeLimitException("A nota deve estar entre 0 e 20 valores");
                 }
             }
         }

@@ -13,7 +13,7 @@ public class ShortPassword implements ChangePasswordCheck {
         oldPassword = null; // Só para provar que não tem utilidade
 
         if (newPassword.length() < 6) {
-            throw new ShortPasswordException("Your password cannot be smaller than 6 characters");
+            throw new ShortPasswordException("A senha nao pode ser menor que 6 caracters");
         }
 
     }

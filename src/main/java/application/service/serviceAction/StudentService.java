@@ -73,7 +73,7 @@ public class StudentService implements ExtendsUserService {
     @Override
     public Student returnUser(Long id) { // Método que retorna um estudante do banco.
         Optional<Student> student = studentRepository.findById(id);
-        return student.orElseThrow(() -> new ResourceNotFoundException("Id : " + id + ", This student wasn't found on DataBase"));
+        return student.orElseThrow(() -> new ResourceNotFoundException("Id : " + id + ", Aluno nao encontrado na base de daodos"));
     }
 
     @Override
@@ -85,7 +85,7 @@ public class StudentService implements ExtendsUserService {
             } else if (noClass.equalsIgnoreCase("FALSE")) {
                 students = studentRepository.findAll();
             } else {
-                throw new InvalidParamException("This parameter : {" + noClass + "} is invalid.");
+                throw new InvalidParamException("Este parametro : {" + noClass + "} e invalido.");
             }
         } else {
             students = studentRepository.findAll();

@@ -16,7 +16,7 @@ public class FullList implements AddStudentCheck { // Se a turma estiver cheia, 
 
         int numberStudents = classRoom.getStudents().size();
         if (numberStudents >= 10) {
-            throw new FullListException("The list of students in a classroom cannot be bigger than 10");
+            throw new FullListException("a liata dos estudantes em uma sala nao devem ultrapassar 10");
         }
     }
 }

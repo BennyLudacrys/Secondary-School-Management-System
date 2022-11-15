@@ -21,7 +21,7 @@ public class EmailAlreadyRegistered implements RegisterUserCheck {
         Optional<User> user = userRepository.findByEmail(email);
 
         if (user.isPresent()) {
-            throw new EmailAlreadyRegisteredException("This e-mail already exists on system");
+            throw new EmailAlreadyRegisteredException("Este email ja existe no sistema");
         }
 
     }

@@ -13,7 +13,7 @@ public class RemovePrincipal implements RemoveUserCheck {
     @Override
     public void validation(User user) {
         if (user instanceof Principal) {
-            throw new RemovePrincipalException("You can't remove a principal from the system.");
+            throw new RemovePrincipalException("nao podes remover um administrador do sistema");
         }
     }
 }

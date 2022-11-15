@@ -13,7 +13,7 @@ public class ClassContainsSameStudent implements AddStudentCheck { // O aluno nÃ
     @Override
     public void validation(Student student, ClassRoom classRoom) {
         if (classRoom.getStudents().stream().anyMatch(studentClass -> studentClass.equals(student))) {
-            throw new ClassContainsSameStudentException("This student already is in this classroom");
+            throw new ClassContainsSameStudentException("Este estudante ja esta nesta sala");
         }
     }
 

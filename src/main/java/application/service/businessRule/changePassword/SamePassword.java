@@ -15,7 +15,7 @@ public class SamePassword implements ChangePasswordCheck {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         boolean check = passwordEncoder.matches(newPassword, oldPassword);
         if (check) {
-            throw new SamePasswordException("Your new password can't be equal the last one");
+            throw new SamePasswordException("A nova senha nao pode ser igual a antiga");
         }
     }
 }

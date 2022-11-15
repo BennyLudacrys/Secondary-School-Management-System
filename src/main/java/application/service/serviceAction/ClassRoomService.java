@@ -211,9 +211,9 @@ public class ClassRoomService {
         try {
             classRepository.delete(classRoom);  // Só é possivel remover uma classe caso ela não tenha estudantes nem professor, se tiver, vai dar erro, e vai lançar a
         } catch (DataIntegrityViolationException e) {                             // exception da linha 205.
-            throw new DatabaseException("You can't delete a class that has teachers and students, remove them first!");
+            throw new DatabaseException("Nao podes deletar uma turma que tem alunos e professores. apague-os primeiro!");
         }
-        return "Class : " + idClass + " removed!";
+        return "Turma : " + idClass + " removida!";
     }
 
     private void teacherAllowed(ClassRoom classRoom, Principal user) { //  Verifica se o teacher está permitido a fazer algo.
@@ -234,18 +234,18 @@ public class ClassRoomService {
         Optional<Student> studentOptionalDataBase = studentRepository.findById(idStudent); // Pesquisar se o aluno existe no BANCO, se n existir, erro na linha 220!
         if (!addMethod) {  // SE NÃO FOR O MÉTODO DE ADICIONAR
             studentRepository.findStudentByClassId(classRoom.getId(), idStudent)// Pesquisa se o aluno existe nessa CLASSE!
-                    .orElseThrow(() -> new StudentDoesntExistInThisClassException("This student isn't in this classroom")); // Se não existir, ERRO!
+                    .orElseThrow(() -> new StudentDoesntExistInThisClassException("Este estudante nao esta nesta turma")); // Se não existir, ERRO!
         }
-        return studentOptionalDataBase.orElseThrow(() -> new ResourceNotFoundException("Id : " + idStudent + ", This student wasn't found on DataBase"));
+        return studentOptionalDataBase.orElseThrow(() -> new ResourceNotFoundException("Id : " + idStudent + ", Este estdante nao foi encontrado na base de dados"));
     }
 
     private Teacher returnTeacher(Long idTeacher) { // Método que retorna um Professor do banco.
         Optional<Teacher> teacher = teacherRepository.findById(idTeacher);
-        return teacher.orElseThrow(() -> new ResourceNotFoundException("Id : " + idTeacher + ", This teacher wasn't found on DataBase"));
+        return teacher.orElseThrow(() -> new ResourceNotFoundException("Id : " + idTeacher + ", Este professor nao esta na base de dados"));
     }
 
     private void approve(Student student) {               // Aprova um estudante, troca o status para = APROVADO !
-        if (student.getReportCard().getAverageStudent() >= 6) {
+        if (student.getReportCard().getAverageStudent() >= 10) {
             student.getReportCard().setSituation(Situation.ADMITIDO);
         }
     }

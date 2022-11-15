@@ -24,7 +24,7 @@ public class AuthenticationService {
             Authentication authentication = authManager.authenticate(loginData); // autenticar usuário com base nos dados informados por ele
             return tokenService.generateToken(authentication);      // geração do token .
         } catch (AuthenticationException e) {
-            throw new DatabaseException("E-mail and / or password is / are wrong!");       // Causará um erro caso os dados passados pelo usuário estejam errados.
+            throw new DatabaseException("E-mail e / ou senha is / invalidos!");       // Causará um erro caso os dados passados pelo usuário estejam errados.
         }
     }
 }

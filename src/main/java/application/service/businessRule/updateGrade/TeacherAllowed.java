@@ -20,12 +20,12 @@ public class TeacherAllowed implements UpdateGradesCheck {
         String classTeacherName;
 
         if(classRoom.getTeacher() == null) {
-            throw new ThereIsntTeacherInThisClassException("This class doesn't have any teacher");
+            throw new ThereIsntTeacherInThisClassException("Esta turma nao tem nenum professor");
         }
         classTeacherName = classRoom.getTeacher().getEmail();
 
         if (!classTeacherName.equals(userLoggedName)) {
-            throw new NoPermissionException("Permission required to access this! Just the class's Teacher can access this!");
+            throw new NoPermissionException("Precisas de permissao! Apenas o professor da turma pode aceder aqui!");
         }
 
     }

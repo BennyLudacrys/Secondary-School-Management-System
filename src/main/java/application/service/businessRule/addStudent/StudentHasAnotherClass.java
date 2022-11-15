@@ -16,7 +16,7 @@ public class StudentHasAnotherClass implements AddStudentCheck {
         classRoom = null; // Só para deixar claro que não tem uso aqui.
 
         if (student.getClassRoom() != null) {
-            throw new StudentHasAnotherClassException("The student already has an another class.");
+            throw new StudentHasAnotherClassException("Este aluno ja esta em uma outra sala.");
         }
     }
 

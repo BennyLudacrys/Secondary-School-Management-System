@@ -27,7 +27,7 @@ public class SwaggerConfigurations { // Configurações do SWAGGER !
         return new OpenAPI()
                 .info(new Info().title("Secundary School System API")
                         .description("Projeto de Documentacao de API do Benedito")
-                        .version("v0.0.1")
+                        .version("v0.0.2")
                         .license(new License().name("Apache 2.0").url("http://springdoc.org")))
                 .components(new Components().addSecuritySchemes("bearer-key", new SecurityScheme().type(SecurityScheme.Type.HTTP)
                         .scheme("bearer")

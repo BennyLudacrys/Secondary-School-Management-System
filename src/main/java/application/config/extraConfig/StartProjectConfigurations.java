@@ -61,10 +61,10 @@ public class StartProjectConfigurations implements CommandLineRunner { // Essa c
         AddressVO a4 = new AddressVO("Cabo delegado", "Mocimboa da praia", "Mozambique");
         AddressVO principalAddress = new AddressVO("Maputo", "NKOBE", "Mozambique");
 
-        Responsibility res1 = new Responsibility("Verify what students don't have classes!");
-        Responsibility res2 = new Responsibility("Verify if there is some teacher with no class!");
-        Responsibility res3 = new Responsibility("Verify how many students / teachers there are on the system!");
-        Responsibility res4 = new Responsibility("Has to register classes / teachers / students on the system and also delete them!");
+        Responsibility res1 = new Responsibility("Verifica quais estudantes que nao tem classes!");
+        Responsibility res2 = new Responsibility("verifica se algum professor nao tem classe!");
+        Responsibility res3 = new Responsibility("verifica quantos alunos/ professores estao no sistema!");
+        Responsibility res4 = new Responsibility("Teem que registar Turmas / Professores / alunos no sistema e deleta-os!");
 
         responsibilityRepository.saveAll(Arrays.asList(res1, res2, res3, res4));
         principal.addResponsibility(res1);
@@ -118,9 +118,9 @@ public class StartProjectConfigurations implements CommandLineRunner { // Essa c
         classRoomRepository.saveAll(Arrays.asList(cr1, cr2));
 
 
-        Teacher teacher2 = new Teacher("Euni", "euni@gmail.com", passwordEncode);
-        AddressVO a6 = new AddressVO("Salvador", "Bahia", "Brasil");
-        RegistrationVO registration7 = new RegistrationVO(Instant.parse("2019-07-21T03:42:10Z"));
+        Teacher teacher2 = new Teacher("Jordao", "Jordao@gmail.com", passwordEncode);
+        AddressVO a6 = new AddressVO("Maputo", "Nkobe", "Mozambique");
+        RegistrationVO registration7 = new RegistrationVO(Instant.parse("2022-07-21T03:42:10Z"));
         teacher2.addRole(role2);
         teacher2.setAddress(a6);
         teacher2.setRegistration(registration7);

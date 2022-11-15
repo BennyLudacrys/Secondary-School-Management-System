@@ -59,7 +59,7 @@ public class UserService implements UserDetailsService, AllUserTypeService {
         verifyInstance(user);
         userRepository.delete(user);
 
-        return "User  : " + userInfo + " removed with success!";
+        return "User  : " + userInfo + " removedo com successo!";
     }
 
     @Override
@@ -77,7 +77,7 @@ public class UserService implements UserDetailsService, AllUserTypeService {
             if (rolesName.equals("ROLE_TEACHER") || rolesName.equals("ROLE_STUDENT")) {
                 users = userRepository.findByRolesName(rolesName);
             } else {
-                throw new InvalidParamException("This parameter : {" + rolesNameOriginal + "} is invalid");
+                throw new InvalidParamException("Este parametero : {" + rolesNameOriginal + "} e invalido");
             }
         } else {
             users = userRepository.findAll();
