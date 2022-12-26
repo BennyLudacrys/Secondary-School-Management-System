@@ -106,7 +106,7 @@ Dependências :
      
      LomBok -> Utilizado para evitar muitas linhas de código.
 
-Programas Utilizados : 
+Programas Utilizados: 
  
     Postman - Utilizado para fazer as requisições (CONSUMIR) a aplicação.
     
