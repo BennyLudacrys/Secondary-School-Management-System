@@ -116,7 +116,7 @@ Programas Utilizados :
     
     Git e GitHub - Utilizados para commitar o projeto e subir o código para a nuvem(remoto).
 
-Bancos de Dados : 
+Bancos de Dados: 
 
     MYSQL - Usado em ambiente de desenvolvimento e produção.
     
