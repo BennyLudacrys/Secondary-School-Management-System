@@ -1,8 +1,8 @@
 # SecundarySchoolSystem
 --------SOBRE O QUE É A APLICAÇÃO--------
 
-Foi desenvolvida uma aplicação BACK-END que simula um sistema escolar básico/primario, como o ensino
-fundamental/Secundario.
+Foi desenvolvida uma aplicação BACK-END que simula um sistema escolar básico, como o ensino
+fundamental.
 
 --------OBJETIVO-------- 
 
@@ -66,7 +66,7 @@ Um diretor remove um usuário do sistema.
 
 ---------VERSIONAMENTO-------- 
 
-Versão do Java : 11
+Versão do Java : 17
 
 Versão do Spring Boot : 2.6.7
 
@@ -130,6 +130,5 @@ Bancos de Dados :
 
 ------------------------ LINKS -----------------------------
 
-   Explicação da API em vídeo no YouTube : https://www.youtube.com/watch?v=RbJkriLaTK
    
    Perfil no Linkedin : https://www.linkedin.com/in/benedito-muianga/
