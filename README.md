@@ -132,6 +132,5 @@ Bancos de Dados :
 
 ------------------------ LINKS -----------------------------
 
-   Explicação da API em vídeo no YouTube : https://www.youtube.com/watch?v=RbJkriLaTKs 
    
    Perfil no Linkedin : https://www.linkedin.com/in/BeneditoMuianga/
