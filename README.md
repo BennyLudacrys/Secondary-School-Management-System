@@ -66,7 +66,7 @@ Um diretor remove um usuário do sistema.
 
 ---------VERSIONAMENTO-------- 
 
-Versão do Java : 11
+Versão do Java : 17
 
 Versão do Spring Boot : 2.6.7
 
@@ -107,8 +107,6 @@ Dependências :
      LomBok -> Utilizado para evitar muitas linhas de código.
 
 Programas Utilizados : 
-
-    Heroku - Utilizado para deixar o projeto na nuvem.
     
     Postman - Utilizado para fazer as requisições (CONSUMIR) a aplicação.
     
