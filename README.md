@@ -1,4 +1,4 @@
-# SecundarySchoolSystem
+# SecundarySchoolManagmentSystem
 --------SOBRE O QUE É A APLICAÇÃO--------
 
 Foi desenvolvida uma aplicação BACK-END que simula um sistema escolar básico, como o ensino
