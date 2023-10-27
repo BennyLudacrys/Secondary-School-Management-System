@@ -17,13 +17,13 @@ public class SwaggerConfigurations { // Configurações do SWAGGER !
     @Bean
     public GroupedOpenApi publicApi() {
         return GroupedOpenApi.builder()
-                .group("almadaApi")
+                .group("beneditoApi")
                 .pathsToMatch("/**")
                 .build();
     }
 
     @Bean
-    public OpenAPI apiAlmada() {
+    public OpenAPI apiBenedito() {
         return new OpenAPI()
                 .info(new Info().title("Secundary School System API")
                         .description("Projeto de Documentacao de API do Benedito")
