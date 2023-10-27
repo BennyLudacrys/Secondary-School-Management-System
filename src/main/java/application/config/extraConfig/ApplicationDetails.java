@@ -8,7 +8,7 @@ public class ApplicationDetails {
         sb.append("\n");
         sb.append(forFormatting());
         sb.append("\n");
-        sb.append("SECUNDARY SCHOOL SYSTEM APPLICATION    ---    Benedito Hilario Muianga\n");
+        sb.append("SECUNDARY SCHOOL MANAGMENT SYSTEM APPLICATION    ---    Benedito Hilario Muianga\n");
         sb.append(forFormatting());
         sb.append("\n");
         sb.append("*Java Version - 11 \n");
