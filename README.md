@@ -2,11 +2,11 @@
 --------SOBRE O QUE É A APLICAÇÃO--------
 
 Foi desenvolvida uma aplicação BACK-END que simula um sistema escolar básico, como o ensino
-fundamental.
+Secundario.
 
 --------OBJETIVO-------- 
 
-Colocar em prática muitos dos conhecimentos que eu adquiri durante um ano e meio de estudo.
+Colocar em prática muitos dos conhecimentos que eu adquiri durante os meus estudos em java.
 
 --------FUNCIONALIDADES-------- 
 
